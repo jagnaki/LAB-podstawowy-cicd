@@ -196,14 +196,14 @@ az aks get-credentials \
   --name aks-lab03 \
   --overwrite-existing
 ```
+> ⚠️ Start klastra trwa ok. 3–5 minut.
 
 ### Sprawdzenie
 ```bash
 kubectl get pods
 kubectl get svc app-svc   # External IP
+curl http://<EXTERNAL_IP>/health
 ```
-
-> ⚠️ Start klastra trwa ok. 3–5 minut.
 
 ## CI/CD Pipeline
 

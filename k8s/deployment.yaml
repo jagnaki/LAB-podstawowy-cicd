@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: acrlab03355820.azurecr.io/app:PLACEHOLDER
+          image: ${{ secrets.ACR_LOGIN_SERVER }}/app:PLACEHOLDER
           ports:
             - containerPort: 8080
 ---
